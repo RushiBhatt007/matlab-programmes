@@ -1,0 +1,43 @@
+clc;
+clear all;
+
+
+y=input('enter matrix as (x,y) : ');
+z=input('value of x to be find');
+y
+z
+[m n]=size(y);
+b=zeros(m,m+1)
+
+for i=1:m
+    b(i,2)=y(i,2);
+    b(i,1)=y(i,1);
+end
+b
+k=m-1;
+id=0;
+    for i=3:m+1
+        for j=1:k
+            b(j,i)=(b(j+1,i-1)-b(j,i-1))/(b(j+i-2,1)-b(j,1));
+        end
+        k=k-1;
+    end
+b  
+w=b(1,2);
+ml=1;
+s=1;
+for i=3:m+1
+    for j=1:ml
+        s=(s*(z-b(j,1)));
+    end
+    ml=ml+1;
+    w=w+(b(1,i)*s);
+    s=1;
+end
+w
+    
+    
+    
+            
+        
+    
