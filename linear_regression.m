@@ -1,11 +1,13 @@
 %linear regression
 clc;
-clear all;
+clear;
+close all;
+
 y=input('enter matrix as (x,y) : ');
 z=input('enter order : ');
 long y
 
-[m n]=size(y);
+[m,n]=size(y);
 c=zeros((2*z),1);
 w=zeros(z,1);
 

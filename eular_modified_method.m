@@ -1,5 +1,7 @@
 clc;
-clear all;
+clear;
+close all;
+
 f= inline('(2+(0.6*(c^1.6)))/(1+(0.5*(c^0.7)))','c'); 
 
 c= 1;

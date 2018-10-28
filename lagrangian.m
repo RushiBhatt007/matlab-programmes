@@ -1,5 +1,6 @@
 clc;
-clear all;
+clear;
+close all;
 
 x=input('enter order of equation');
 y=input('enter matrix as (x,y) : ');

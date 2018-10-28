@@ -1,5 +1,6 @@
 clc;
-clear all;
+clear;
+close all;
 
 a=input('input matrix');
 b=input('input rhs');

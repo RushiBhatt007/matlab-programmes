@@ -1,5 +1,6 @@
 clc;
-clear all;
+clear;
+close all;
 disp('your matrix is type of AX=B');
 A = input('Enter matrix A : ');
 b = input('enter matrix B : ');
